@@ -1,0 +1,28 @@
+{
+  "college": {
+    "name": "BBD Campus Navigator",
+    "workingDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "collegeStartTime": "09:00",
+    "collegeEndTime": "17:00",
+    "lunchBreak": {
+      "start": "13:00",
+      "end": "14:00"
+    },
+    "upcomingClassBeforeMinutes": 30
+  },
+
+  "messages": {
+    "holiday": "Today is Holiday",
+    "noClasses": "No Classes Today",
+    "collegeOver": "Today's Classes are Over",
+    "noCurrentClass": "No Current Class",
+    "upcomingClass": "Upcoming Class"
+  }
+}

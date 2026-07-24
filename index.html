@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBD Campus Navigator</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== Header Section ===================== -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- University Logo -->
+            <img src="assets\images\BBDU.png.png" alt="BBD University Logo" class="logo">
+
+            <!-- Title and Subtitle -->
+            <div class="header-text">
+                <h1 class="site-title">BBD Campus Navigator</h1>
+                <p class="site-subtitle">Find Your Current Classroom Instantly</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== Main Content ===================== -->
+    <main class="main-content">
+
+        <!-- ===================== Search Card ===================== -->
+        <section class="search-card" id="searchCard">
+            <h2 class="card-heading">Locate Your Class</h2>
+
+            <!-- Search Form Container -->
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number">
+            </div>
+
+            <!-- Find Class Button -->
+            <button id="findBtn" type="button">Find My Class</button>
+        </section>
+
+        <!-- ===================== Result Card ===================== -->
+        <!-- Hidden initially, shown by script.js after finding student data -->
+        <section class="result-card" id="resultCard" hidden>
+
+            <!-- Welcome Message -->
+            <h2 id="welcomeMessage" class="welcome-message"></h2>
+
+            <!-- Current Status -->
+            <p id="statusMessage" class="status-message"></p>
+
+            <!-- Class Details Container -->
+            <div class="details-container">
+
+                <!-- Current Subject -->
+                <div class="detail-item">
+                    <span class="detail-label">Current Subject:</span>
+                    <span id="subject" class="detail-value"></span>
+                </div>
+
+                <!-- Floor -->
+                <div class="detail-item">
+                    <span class="detail-label">Floor:</span>
+                    <span id="floor" class="detail-value"></span>
+                </div>
+
+                <!-- Wing -->
+                <div class="detail-item">
+                    <span class="detail-label">Wing:</span>
+                    <span id="wing" class="detail-value"></span>
+                </div>
+
+                <!-- Room -->
+                <div class="detail-item">
+                    <span class="detail-label">Room:</span>
+                    <span id="room" class="detail-value"></span>
+                </div>
+
+                <!-- Faculty -->
+                <div class="detail-item">
+                    <span class="detail-label">Faculty:</span>
+                    <span id="faculty" class="detail-value"></span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== Footer Section ===================== -->
+    <footer class="site-footer">
+        <p>&copy; 2026 BBD Campus Navigator</p>
+    </footer>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>

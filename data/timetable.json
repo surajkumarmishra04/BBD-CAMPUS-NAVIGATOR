@@ -1,0 +1,211 @@
+{
+  "2B": {
+    "Monday": [
+      {
+        "start": "09:00",
+        "end": "10:00",
+        "subject": "Data Structure Lab",
+        "type": "Practical",
+        "faculty": "Ms. Jyoti Yadav",
+        "room": "515"
+      },
+      {
+        "start": "11:00",
+        "end": "12:00",
+        "subject": "Digital Logic Design",
+        "type": "Lecture",
+        "faculty": "Mr. Ravi Shankar Yadav",
+        "room": "406"
+      },
+      {
+        "start": "12:00",
+        "end": "13:00",
+        "subject": "Discrete Mathematics",
+        "type": "Lecture",
+        "faculty": "Ms. Shraddha Tiwari",
+        "room": "406"
+      },
+      {
+        "start": "14:00",
+        "end": "15:00",
+        "subject": "Complex Analysis and Integral Transforms",
+        "type": "Lecture",
+        "faculty": "Dr. Priyanka Singh",
+        "room": "407"
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "subject": "Data Structure using C",
+        "type": "Lecture",
+        "faculty": "Ms. Jyoti Yadav",
+        "room": "407"
+      },
+      {
+        "start": "16:00",
+        "end": "17:00",
+        "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+        "type": "Lecture",
+        "faculty": "Mr. Shailesh Vishwakarma",
+        "room": "405"
+      }
+    ],
+
+    "Tuesday": [],
+
+    "Wednesday": [
+      {
+        "start": "09:00",
+        "end": "11:00",
+        "subject": "Digital Logic Design Lab",
+        "type": "Practical",
+        "faculty": "Mr. Ravi Shankar Yadav",
+        "room": "LGF001"
+      },
+      {
+        "start": "11:00",
+        "end": "12:00",
+        "subject": "Data Structure using C",
+        "type": "Lecture",
+        "faculty": "Ms. Jyoti Yadav",
+        "room": "406"
+      },
+      {
+        "start": "12:00",
+        "end": "13:00",
+        "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+        "type": "Lecture",
+        "faculty": "Mr. Shailesh Vishwakarma",
+        "room": "406"
+      },
+      {
+        "start": "14:00",
+        "end": "15:00",
+        "subject": "Complex Analysis and Integral Transforms",
+        "type": "Lecture",
+        "faculty": "Dr. Priyanka Singh",
+        "room": "405"
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "subject": "Industrial Sociology",
+        "type": "Lecture",
+        "faculty": "Dr. Pooja Verma",
+        "room": "405"
+      }
+    ],
+
+    "Thursday": [
+      {
+        "start": "09:00",
+        "end": "10:00",
+        "subject": "Discrete Mathematics",
+        "type": "Lecture",
+        "faculty": "Ms. Shraddha Tiwari",
+        "room": "405"
+      },
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "subject": "Complex Analysis and Integral Transforms",
+        "type": "Lecture",
+        "faculty": "Dr. Priyanka Singh",
+        "room": "405"
+      },
+      {
+        "start": "11:00",
+        "end": "12:00",
+        "subject": "Data Structure using C",
+        "type": "Lecture",
+        "faculty": "Ms. Jyoti Yadav",
+        "room": "405"
+      },
+      {
+        "start": "12:00",
+        "end": "13:00",
+        "subject": "Library",
+        "type": "Library",
+        "faculty": "",
+        "room": "LIB"
+      },
+      {
+        "start": "14:00",
+        "end": "15:00",
+        "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+        "type": "Lecture",
+        "faculty": "Mr. Shailesh Vishwakarma",
+        "room": "405"
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "subject": "Industrial Sociology",
+        "type": "Lecture",
+        "faculty": "Dr. Pooja Verma",
+        "room": "405"
+      },
+      {
+        "start": "16:00",
+        "end": "17:00",
+        "subject": "Digital Logic Design",
+        "type": "Lecture",
+        "faculty": "Mr. Ravi Shankar Yadav",
+        "room": "407"
+      }
+    ],
+
+    "Friday": [
+      {
+        "start": "09:00",
+        "end": "10:00",
+        "subject": "Data Structure using C",
+        "type": "Lecture",
+        "faculty": "Ms. Jyoti Yadav",
+        "room": "407"
+      },
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+        "type": "Lecture",
+        "faculty": "Mr. Shailesh Vishwakarma",
+        "room": "407"
+      },
+      {
+        "start": "11:00",
+        "end": "13:00",
+        "subject": "NSS / Yoga",
+        "type": "Practical",
+        "faculty": "Ms. Veena Dwivedi",
+        "room": "CH"
+      },
+      {
+        "start": "14:00",
+        "end": "15:00",
+        "subject": "Discrete Mathematics",
+        "type": "Lecture",
+        "faculty": "Ms. Shraddha Tiwari",
+        "room": "406"
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "subject": "Digital Logic Design",
+        "type": "Lecture",
+        "faculty": "Mr. Ravi Shankar Yadav",
+        "room": "405"
+      },
+      {
+        "start": "16:00",
+        "end": "17:00",
+        "subject": "Complex Analysis and Integral Transforms",
+        "type": "Lecture",
+        "faculty": "Dr. Priyanka Singh",
+        "room": "403"
+      }
+    ],
+
+    "Saturday": []
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "401": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+  "402": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+  "403": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+  "404": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+  "405": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+  "406": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+  "407": {
+    "floor": "4th Floor",
+    "wing": "Wing A"
+  },
+
+  "408": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+  "409": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+  "410": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+  "411": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+  "412": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+  "413": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+  "414": {
+    "floor": "4th Floor",
+    "wing": "Wing B"
+  },
+
+  "415": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+  "416": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+  "417": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+  "418": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+  "419": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+  "420": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+  "421": {
+    "floor": "4th Floor",
+    "wing": "Wing C"
+  },
+
+  "515": {
+    "floor": "5th Floor",
+    "wing": "Lab Wing"
+  },
+
+  "LGF001": {
+    "floor": "Lower Ground Floor",
+    "wing": "Lab Wing"
+  },
+
+  "LIB": {
+    "floor": "Library Block",
+    "wing": "Central Library"
+  },
+
+  "CH": {
+    "floor": "Ground Floor",
+    "wing": "Central Hall"
+  }
+}

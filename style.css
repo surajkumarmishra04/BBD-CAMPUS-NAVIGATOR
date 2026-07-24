@@ -1,0 +1,402 @@
+/* ============================================================
+   BBD CAMPUS NAVIGATOR - STYLESHEET
+   Theme: Professional, Minimal, Modern, Blue & White
+   ============================================================ */
+
+/* ============================================================
+   1. CSS VARIABLES (ROOT)
+   ============================================================ */
+:root {
+    /* Colors */
+    --color-primary: #1d4ed8;
+    --color-primary-dark: #1e40af;
+    --color-primary-light: #3b82f6;
+    --color-bg: #ffffff;
+    --color-bg-soft: #f5f7fb;
+    --color-text-main: #1f2937;
+    --color-text-muted: #6b7280;
+    --color-border: #e2e8f0;
+    --color-footer-text: #9ca3af;
+
+    /* Status Colors */
+    --color-success: #16a34a;
+    --color-warning: #d97706;
+    --color-error: #dc2626;
+    --color-holiday: #7c3aed;
+    --color-college-over: #6b7280;
+    --color-upcoming: #0891b2;
+    --color-current: #1d4ed8;
+
+    /* Typography */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Layout */
+    --max-width: 900px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+}
+
+/* ============================================================
+   2. RESET & BASE STYLES
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-soft);
+    color: var(--color-text-main);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================================
+   3. LAYOUT HELPERS
+   ============================================================ */
+.main-content {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+/* ============================================================
+   4. HEADER SECTION
+   ============================================================ */
+.site-header {
+    width: 100%;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-xs);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: var(--spacing-xs);
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    letter-spacing: -0.02em;
+}
+
+.site-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    margin-top: 4px;
+}
+
+/* ============================================================
+   5. SEARCH CARD
+   ============================================================ */
+.search-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    transition: box-shadow var(--transition-fast);
+}
+
+.search-card:hover {
+    box-shadow: var(--shadow-elevated);
+}
+
+.card-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    text-align: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Form Group Wrapper (label + input) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.form-group input {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    outline: none;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* Input Focus Effect */
+.form-group input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+
+/* Find My Class Button */
+#findBtn {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    margin-top: var(--spacing-xs);
+}
+
+#findBtn:hover {
+    background-color: var(--color-primary-dark);
+}
+
+#findBtn:active {
+    transform: scale(0.98);
+}
+
+/* ============================================================
+   6. RESULT CARD
+   ============================================================ */
+.result-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    transition: box-shadow var(--transition-fast);
+}
+
+.result-card:hover {
+    box-shadow: var(--shadow-elevated);
+}
+
+/* Hide result card when [hidden] attribute is set */
+.result-card[hidden] {
+    display: none;
+}
+
+.welcome-message {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    text-align: center;
+}
+
+.status-message {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Details Container - Grid Layout for Rows */
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.detail-value {
+    font-weight: 700;
+    color: var(--color-text-main);
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+/* ============================================================
+   7. STATUS MESSAGE VARIANTS
+   Use these classes on #statusMessage via script.js
+   ============================================================ */
+.status-success {
+    color: var(--color-success);
+}
+
+.status-warning {
+    color: var(--color-warning);
+}
+
+.status-error {
+    color: var(--color-error);
+}
+
+.status-holiday {
+    color: var(--color-holiday);
+}
+
+.status-college-over {
+    color: var(--color-college-over);
+}
+
+.status-upcoming-class {
+    color: var(--color-upcoming);
+}
+
+.status-current-class {
+    color: var(--color-current);
+}
+
+/* ============================================================
+   8. FOOTER SECTION
+   ============================================================ */
+.site-footer {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-sm);
+    font-size: 0.85rem;
+    color: var(--color-footer-text);
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+}
+
+/* ============================================================
+   9. RESPONSIVE DESIGN
+   ============================================================ */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .main-content {
+        padding: var(--spacing-md) var(--spacing-sm);
+        gap: var(--spacing-md);
+    }
+
+    .site-title {
+        font-size: 1.6rem;
+    }
+
+    .search-card,
+    .result-card {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .logo {
+        width: 64px;
+        height: 64px;
+    }
+
+    .site-title {
+        font-size: 1.3rem;
+    }
+
+    .site-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .search-card,
+    .result-card {
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-md);
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px 12px;
+    }
+
+    #findBtn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .detail-value {
+        text-align: left;
+    }
+}
