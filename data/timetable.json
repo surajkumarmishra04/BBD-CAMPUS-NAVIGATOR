@@ -3,7 +3,7 @@
     "Monday": [
       {
         "start": "09:00",
-        "end": "10:00",
+        "end": "11:00",
         "subject": "Data Structure Lab",
         "type": "Practical",
         "faculty": "Ms. Jyoti Yadav",
@@ -25,6 +25,12 @@
         "faculty": "Ms. Shraddha Tiwari",
         "room": "406"
       },
+      {
+  "start": "13:00",
+  "end": "14:00",
+  "subject": "Lunch Break",
+  "isLunch": true
+},
       {
         "start": "14:00",
         "end": "15:00",

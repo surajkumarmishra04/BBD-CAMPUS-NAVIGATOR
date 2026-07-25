@@ -1,105 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character Encoding & Viewport Settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BBD Campus Navigator - Smart Classroom Navigation System for student schedules and classroom locations.">
+    
+    <!-- Page Title -->
     <title>BBD Campus Navigator</title>
-
+    
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===================== Header Section ===================== -->
-    <header class="site-header">
-        <div class="header-container">
-            <!-- University Logo -->
-            <img src="assets\images\BBDU.png.png" alt="BBD University Logo" class="logo">
-
-            <!-- Title and Subtitle -->
-            <div class="header-text">
-                <h1 class="site-title">BBD Campus Navigator</h1>
-                <p class="site-subtitle">Find Your Current Classroom Instantly</p>
-            </div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-wrapper">
+            <img src="assets/images/bbdlogo2.png" alt="Babu Banarasi Das University Logo" class="university-logo">
         </div>
+        <h1 class="app-title">BBD Campus Navigator</h1>
+        <p class="app-subtitle">Smart Classroom Navigation System</p>
     </header>
 
-    <!-- ===================== Main Content ===================== -->
-    <main class="main-content">
+    <!-- Main Application Container -->
+    <main class="main-container">
 
-        <!-- ===================== Search Card ===================== -->
-        <section class="search-card" id="searchCard">
-            <h2 class="card-heading">Locate Your Class</h2>
+        <!-- Search Card / Student Credentials Form -->
+        <section class="card search-card" aria-labelledby="search-card-heading">
+            <h2 id="search-card-heading" class="sr-only">Student Search</h2>
+            <form id="studentSearchForm">
+                
+                <!-- Student Name Input Group -->
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input 
+                        type="text" 
+                        id="studentName" 
+                        name="studentName" 
+                        placeholder="Enter your full name" 
+                        required 
+                        autocomplete="name"
+                    >
+                </div>
 
-            <!-- Search Form Container -->
-            <div class="form-group">
-                <label for="studentName">Student Name</label>
-                <input type="text" id="studentName" name="studentName" placeholder="Enter your full name">
-            </div>
+                <!-- Mobile Number Input Group -->
+                <div class="form-group">
+                    <label for="mobileNumber">Student Mobile Number</label>
+                    <input 
+                        type="tel" 
+                        id="mobileNumber" 
+                        name="mobileNumber" 
+                        placeholder="Enter 10-digit mobile number" 
+                        required 
+                        autocomplete="tel"
+                    >
+                </div>
 
-            <div class="form-group">
-                <label for="mobileNumber">Mobile Number</label>
-                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number">
-            </div>
+                <!-- Navigation Action Buttons -->
+                <div class="button-group">
+                    <button type="button" id="findBtn" class="btn btn-primary">Find My Class</button>
+                    <button type="button" id="nextClassBtn" class="btn btn-secondary">Find My Next Class</button>
+                </div>
 
-            <!-- Find Class Button -->
-            <button id="findBtn" type="button">Find My Class</button>
+            </form>
         </section>
 
-        <!-- ===================== Result Card ===================== -->
-        <!-- Hidden initially, shown by script.js after finding student data -->
-        <section class="result-card" id="resultCard" hidden>
+        <!-- Collapsible View Schedule Section -->
+        <section class="schedule-section" aria-label="Schedule Finder">
+            <details class="schedule-collapsible">
+                <summary class="schedule-summary">View Schedule</summary>
+                
+                <div class="schedule-content">
+                    <form id="scheduleFilterForm">
+                        
+                        <!-- Day Selection Dropdown -->
+                        <div class="form-group">
+                            <label for="selectedDay">Select Day</label>
+                            <select id="selectedDay" name="selectedDay" required autocomplete="off">
+                                <option value="" disabled selected>Select a day</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                            </select>
+                        </div>
 
-            <!-- Welcome Message -->
-            <h2 id="welcomeMessage" class="welcome-message"></h2>
+                        <!-- Time Selection Dropdown -->
+                        <div class="form-group">
+                            <label for="selectedTime">Select Time</label>
+                            <select id="selectedTime" name="selectedTime" required autocomplete="off">
+                                <option value="" disabled selected>Select time interval</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                        </div>
 
-            <!-- Current Status -->
-            <p id="statusMessage" class="status-message"></p>
+                        <!-- Schedule Check Button -->
+                        <button type="button" id="checkScheduleBtn" class="btn btn-action">Check Schedule</button>
 
-            <!-- Class Details Container -->
-            <div class="details-container">
-
-                <!-- Current Subject -->
-                <div class="detail-item">
-                    <span class="detail-label">Current Subject:</span>
-                    <span id="subject" class="detail-value"></span>
+                    </form>
                 </div>
+            </details>
+        </section>
 
-                <!-- Floor -->
-                <div class="detail-item">
-                    <span class="detail-label">Floor:</span>
-                    <span id="floor" class="detail-value"></span>
-                </div>
-
-                <!-- Wing -->
-                <div class="detail-item">
-                    <span class="detail-label">Wing:</span>
-                    <span id="wing" class="detail-value"></span>
-                </div>
-
-                <!-- Room -->
-                <div class="detail-item">
-                    <span class="detail-label">Room:</span>
-                    <span id="room" class="detail-value"></span>
-                </div>
-
-                <!-- Faculty -->
-                <div class="detail-item">
-                    <span class="detail-label">Faculty:</span>
-                    <span id="faculty" class="detail-value"></span>
-                </div>
-
+        <!-- Result Card (Initially Hidden) -->
+        <section id="resultCard" class="card result-card" hidden aria-live="polite">
+            
+            <!-- Result Header & Status Information -->
+            <div class="result-header">
+                <h2 id="welcomeMessage">Welcome</h2>
+                <div id="statusMessage" class="status-badge">Current Class</div>
             </div>
+
+            <!-- Class Information Details -->
+            <dl class="class-info-list">
+                <div class="info-row">
+                    <dt class="info-label">Current Subject</dt>
+                    <dd class="info-separator">:</dd>
+                    <dd id="subject" class="info-value">Data Structure using C</dd>
+                </div>
+
+                <div class="info-row">
+                    <dt class="info-label">Floor</dt>
+                    <dd class="info-separator">:</dd>
+                    <dd id="floor" class="info-value">4th Floor</dd>
+                </div>
+
+                <div class="info-row">
+                    <dt class="info-label">Wing</dt>
+                    <dd class="info-separator">:</dd>
+                    <dd id="wing" class="info-value">Wing A</dd>
+                </div>
+
+                <div class="info-row">
+                    <dt class="info-label">Room</dt>
+                    <dd class="info-separator">:</dd>
+                    <dd id="room" class="info-value">407</dd>
+                </div>
+
+                <div class="info-row">
+                    <dt class="info-label">Faculty</dt>
+                    <dd class="info-separator">:</dd>
+                    <dd id="faculty" class="info-value">Ms. Jyoti Yadav</dd>
+                </div>
+            </dl>
+
         </section>
 
     </main>
 
-    <!-- ===================== Footer Section ===================== -->
-    <footer class="site-footer">
+    <!-- Footer Section -->
+    <footer class="footer">
         <p>&copy; 2026 BBD Campus Navigator</p>
+        <p>Developed by Suraj Kumar Mishra</p>
     </footer>
 
-    <!-- External Script -->
+    <!-- Application JavaScript Source Link -->
     <script src="script.js"></script>
 </body>
 </html>
