@@ -527,6 +527,7 @@ function getNextWorkingDay(currentDay) {
  * @param {Object} classInfo 
  */
 function displayResult(student, status, classInfo) {
+  console.log("Status =", status);
   if (!DOM.resultCard) return;
 
   const roomInfo = mapRoom(classInfo.room);
@@ -541,6 +542,21 @@ function displayResult(student, status, classInfo) {
   }
 
   // Update Information List
+  // Lunch Break UI
+if (status === "Lunch Break") {
+    if (DOM.subject) DOM.subject.textContent = "Lunch Break";
+    if (DOM.floor) DOM.floor.textContent = "";
+    if (DOM.wing) DOM.wing.textContent = "";
+    if (DOM.room) DOM.room.textContent = "";
+    if (DOM.faculty) DOM.faculty.textContent = "";
+
+    DOM.resultCard.hidden = false;
+    DOM.resultCard.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+    });
+    return;
+}
   if (DOM.subject) DOM.subject.textContent = classInfo.subject || "N/A";
   if (DOM.floor) DOM.floor.textContent = roomInfo.floor || "N/A";
   if (DOM.wing) DOM.wing.textContent = roomInfo.wing || "N/A";
