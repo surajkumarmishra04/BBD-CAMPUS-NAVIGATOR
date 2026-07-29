@@ -93,12 +93,12 @@
 
   "LGF001": {
     "floor": "Lower Ground Floor",
-    "wing": "Lab Wing"
+    "wing": "Wing A"
   },
 
   "LIB": {
-    "floor": "Library Block",
-    "wing": "Central Library"
+    "floor": "6th Floor",
+    "wing": "Wing B"
   },
 
   "CH": {
