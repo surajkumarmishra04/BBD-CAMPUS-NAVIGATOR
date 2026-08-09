@@ -7,15 +7,15 @@
         "subject": "Data Structure Lab",
         "type": "Practical",
         "faculty": "Ms. Jyoti Yadav",
-        "room": "515"
+        "room": "Lab2"
       },
       {
         "start": "11:00",
         "end": "12:00",
-        "subject": "Digital Logic Design",
-        "type": "Lecture",
-        "faculty": "Mr. Ravi Shankar Yadav",
-        "room": "406"
+        "subject": "Library",
+        "type": "Library",
+        "faculty": "",
+        "room": "LIB"
       },
       {
         "start": "12:00",
@@ -26,11 +26,14 @@
         "room": "406"
       },
       {
-  "start": "13:00",
-  "end": "14:00",
-  "subject": "Lunch Break",
-  "isLunch": true
-},
+        "start": "13:00",
+        "end": "14:00",
+        "subject": "Lunch Break",
+        "type": "Break",
+        "faculty": "",
+        "room": "",
+        "isLunch": true
+      },
       {
         "start": "14:00",
         "end": "15:00",
@@ -65,7 +68,7 @@
         "end": "11:00",
         "subject": "Digital Logic Design Lab",
         "type": "Practical",
-        "faculty": "Mr. Ravi Shankar Yadav",
+        "faculty": "Dr. Priya Kumari",
         "room": "LGF001"
       },
       {
@@ -85,6 +88,15 @@
         "room": "406"
       },
       {
+        "start": "13:00",
+        "end": "14:00",
+        "subject": "Lunch Break",
+        "type": "Break",
+        "faculty": "",
+        "room": "",
+        "isLunch": true
+      },
+      {
         "start": "14:00",
         "end": "15:00",
         "subject": "Complex Analysis and Integral Transforms",
@@ -99,6 +111,14 @@
         "type": "Lecture",
         "faculty": "Dr. Pooja Verma",
         "room": "405"
+      },
+      {
+        "start": "16:00",
+        "end": "17:00",
+        "subject": "Digital Logic Design",
+        "type": "Lecture",
+        "faculty": "Dr. Priya Kumari",
+        "room": "406"
       }
     ],
 
@@ -136,6 +156,15 @@
         "room": "LIB"
       },
       {
+        "start": "13:00",
+        "end": "14:00",
+        "subject": "Lunch Break",
+        "type": "Break",
+        "faculty": "",
+        "room": "",
+        "isLunch": true
+      },
+      {
         "start": "14:00",
         "end": "15:00",
         "subject": "Artificial Intelligence in Mechanical Engineering Systems",
@@ -156,7 +185,7 @@
         "end": "17:00",
         "subject": "Digital Logic Design",
         "type": "Lecture",
-        "faculty": "Mr. Ravi Shankar Yadav",
+        "faculty": "Dr. Priya Kumari",
         "room": "407"
       }
     ],
@@ -187,6 +216,15 @@
         "room": "CH"
       },
       {
+        "start": "13:00",
+        "end": "14:00",
+        "subject": "Lunch Break",
+        "type": "Break",
+        "faculty": "",
+        "room": "",
+        "isLunch": true
+      },
+      {
         "start": "14:00",
         "end": "15:00",
         "subject": "Discrete Mathematics",
@@ -199,7 +237,7 @@
         "end": "16:00",
         "subject": "Digital Logic Design",
         "type": "Lecture",
-        "faculty": "Mr. Ravi Shankar Yadav",
+        "faculty": "Dr. Priya Kumari",
         "room": "405"
       },
       {
