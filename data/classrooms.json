@@ -85,7 +85,10 @@
     "floor": "4th Floor",
     "wing": "Wing C"
   },
-
+"Lab2": {
+  "floor": "4th Floor",
+  "wing": "Wing A"
+},
   "515": {
     "floor": "5th Floor",
     "wing": "Wing C"
